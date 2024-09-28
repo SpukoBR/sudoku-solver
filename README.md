@@ -72,6 +72,6 @@ Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
 ## Créditos
 
-Baseado nos tutoriais:
+Baseado nos tutoriais do James Wadsworth:
 - [YouTube Playlist](https://www.youtube.com/playlist?list=PLkTXsX7igf8edTYU92nU-f5Ntzuf-RKvW)
 - [GitHub Repository](https://github.com/wadsworj/sudoku_tut)
