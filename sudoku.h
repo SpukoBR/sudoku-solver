@@ -6,7 +6,7 @@
 /*   By: peda-cos <peda-cos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/28 04:24:05 by peda-cos          #+#    #+#             */
-/*   Updated: 2024/09/28 04:51:12 by peda-cos         ###   ########.fr       */
+/*   Updated: 2024/09/30 01:28:53 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,11 @@
 # define SUDOKU_H
 
 # include <stdio.h>
+# include <stdlib.h>
+# include <string.h>
 # define SIZE 9
 
-void	initialize_board(int board[SIZE][SIZE]);
-
-void	initialize_row_0(int board[SIZE][SIZE]);
-void	initialize_row_1(int board[SIZE][SIZE]);
-void	initialize_row_2(int board[SIZE][SIZE]);
-void	initialize_row_3(int board[SIZE][SIZE]);
-void	initialize_row_4(int board[SIZE][SIZE]);
-void	initialize_row_5(int board[SIZE][SIZE]);
-void	initialize_row_6(int board[SIZE][SIZE]);
-void	initialize_row_7(int board[SIZE][SIZE]);
-void	initialize_row_8(int board[SIZE][SIZE]);
-
-void	input_board(int board[SIZE][SIZE], int input[SIZE][SIZE]);
+void	input_row(int board[SIZE][SIZE], int row);
 void	display_board(int board[SIZE][SIZE]);
 
 int		is_valid_row(int board[SIZE][SIZE], int row, int num);
