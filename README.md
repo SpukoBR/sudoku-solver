@@ -19,9 +19,9 @@ The project files are organized as follows:
 
 To compile the project, ensure you have GCC installed and run the command below in the terminal:
 
-\```
+```
 make
-\```
+```
 
 This will generate the executable `sudoku`.
 
@@ -29,15 +29,15 @@ This will generate the executable `sudoku`.
 
 After compilation, you can run the program with the following command:
 
-\```
+```
 ./sudoku
-\```
+```
 
 The program will prompt you to enter the rows of the Sudoku board, displaying the initial board and, if possible, the solution to the Sudoku puzzle.
 
 ## Example Output
 
-\```
+```
 row 0: 0 1 9 0 0 2 0 0 0
 row 1: 4 7 0 6 9 0 0 0 1
 row 2: 0 0 0 4 0 0 0 9 0
@@ -60,7 +60,7 @@ Solved Sudoku board:
 2 5 8 | 9 7 6 | 4 1 3
 6 4 1 | 3 2 8 | 5 7 9
 9 3 7 | 1 5 4 | 8 6 2
-\```
+```
 
 ## License
 
