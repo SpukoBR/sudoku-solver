@@ -6,7 +6,7 @@
 /*   By: peda-cos <peda-cos@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/28 04:20:46 by peda-cos          #+#    #+#             */
-/*   Updated: 2024/09/30 01:37:51 by peda-cos         ###   ########.fr       */
+/*   Updated: 2024/09/30 01:51:56 by peda-cos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,6 @@ int	main(void)
 		input_row(board, i);
 		i++;
 	}
-	printf("\nInitial Sudoku board:\n");
-	display_board(board);
 	if (solve_sudoku(board))
 	{
 		printf("\nSolved Sudoku board:\n");
