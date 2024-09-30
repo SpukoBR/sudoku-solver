@@ -1,56 +1,52 @@
 # Sudoku Solver
 
-Este é um projeto de um resolvedor de Sudoku desenvolvido em C. Ele recebe um tabuleiro de Sudoku parcialmente preenchido e tenta resolver o quebra-cabeça usando uma abordagem de força bruta com retrocesso (backtracking). O programa verifica a validade das jogadas e exibe o tabuleiro inicial e o resolvido (se houver solução).
+This is a Sudoku solver project developed in C. It takes a partially filled Sudoku board from the user and attempts to solve the puzzle using a backtracking approach. The program checks the validity of moves and displays both the initial board and the solved board (if a solution exists).
 
-## Estrutura do Projeto
+## Project Structure
 
-Os arquivos do projeto estão organizados da seguinte forma:
+The project files are organized as follows:
 
-- `main.c`: Função principal que inicializa o tabuleiro, chama o solver e exibe o resultado.
-- `initialize_board_part1.c`, `initialize_board_part2.c`, `initialize_board_part3.c`: Funções para inicializar o tabuleiro de Sudoku com valores predefinidos.
-- `sudoku.h`: Cabeçalhos que contêm as declarações de funções e definições de constantes.
-- `sudoku_board.c`: Funções para exibir e manipular o tabuleiro.
-- `sudoku_check.c`: Funções para verificar a validade das jogadas.
-- `sudoku_solver.c`: Implementação do algoritmo de solução de Sudoku usando retrocesso.
-- `sudoku_validate.c`: Funções auxiliares para validar as jogadas feitas no tabuleiro.
-- `Makefile`: Arquivo Makefile para compilar o programa.
-- `LICENSE`: Licença MIT para o projeto.
+- `main.c`: Main function that initializes the board, calls the solver, and displays the result.
+- `sudoku.h`: Headers containing function declarations and constant definitions.
+- `sudoku_board.c`: Functions for displaying and manipulating the board.
+- `sudoku_check.c`: Functions to check the validity of moves.
+- `sudoku_solver.c`: Implementation of the Sudoku solving algorithm using backtracking.
+- `sudoku_validate.c`: Helper functions to validate moves made on the board.
+- `Makefile`: Makefile to compile the program.
+- `LICENSE`: MIT License for the project.
 
-## Como Compilar
+## How to Compile
 
-Para compilar o projeto, certifique-se de que você tenha o GCC instalado e rode o comando abaixo no terminal:
+To compile the project, ensure you have GCC installed and run the command below in the terminal:
 
-```bash
+\```
 make
-```
+\```
 
-Isso gerará o executável `sudoku`.
+This will generate the executable `sudoku`.
 
-## Como Executar
+## How to Run
 
-Após a compilação, você pode rodar o programa com o seguinte comando:
+After compilation, you can run the program with the following command:
 
-```bash
+\```
 ./sudoku
-```
+\```
 
-O programa exibirá o tabuleiro inicial e, se possível, a solução do Sudoku.
+The program will prompt you to enter the rows of the Sudoku board, displaying the initial board and, if possible, the solution to the Sudoku puzzle.
 
-## Exemplo de Saída
+## Example Output
 
-```
-Initial Sudoku board:
-0 1 9 | 0 0 2 | 0 0 0
-4 7 0 | 6 9 0 | 0 0 1
-0 0 0 | 4 0 0 | 0 9 0
----------------------
-8 9 4 | 5 0 7 | 0 0 0
-0 0 0 | 0 0 0 | 0 0 0
-0 0 0 | 2 0 1 | 9 5 8
----------------------
-0 5 0 | 0 0 6 | 0 0 0
-6 0 0 | 0 2 8 | 0 7 9
-0 0 0 | 1 0 0 | 8 6 0
+\```
+row 0: 0 1 9 0 0 2 0 0 0
+row 1: 4 7 0 6 9 0 0 0 1
+row 2: 0 0 0 4 0 0 0 9 0
+row 3: 8 9 4 5 0 7 0 0 0
+row 4: 0 0 0 0 0 0 0 0 0
+row 5: 0 0 0 2 0 1 9 5 8
+row 6: 0 5 0 0 0 6 0 0 0
+row 7: 6 0 0 0 2 8 0 7 9
+row 8: 0 0 0 1 0 0 8 6 0
 
 Solved Sudoku board:
 3 1 9 | 7 8 2 | 6 4 5
@@ -64,14 +60,14 @@ Solved Sudoku board:
 2 5 8 | 9 7 6 | 4 1 3
 6 4 1 | 3 2 8 | 5 7 9
 9 3 7 | 1 5 4 | 8 6 2
-```
+\```
 
-## Licença
+## License
 
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
 
-## Créditos
+## Credits
 
-Baseado nos tutoriais do James Wadsworth:
+Based on tutorials by James Wadsworth:
 - [YouTube Playlist](https://www.youtube.com/playlist?list=PLkTXsX7igf8edTYU92nU-f5Ntzuf-RKvW)
 - [GitHub Repository](https://github.com/wadsworj/sudoku_tut)
